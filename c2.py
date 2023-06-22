@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-    print(True == 1)
+    print(True is 1)
     x0 = {'a': 0, 'b': 1}
     for k, v in x0.items():
         print(k, v)
+    x1 = [(k, v) for k, v in x0.items()]
+    print(type(x1[0]))
