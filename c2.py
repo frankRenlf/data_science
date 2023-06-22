@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-
-    x = np.linspace(-1, 1, 50)
-    y = 2 * x + 1
-    plt.plot(x, y)
+    l1 = ['1', '2']
+    l2 = list()
+    l3 = {'1': 1}
+    print(type(l1))
+    print(type(l2))
+    print(type(l3))
