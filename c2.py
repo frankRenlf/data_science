@@ -12,9 +12,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-    l1 = ['1', '2']
-    l2 = list()
-    l3 = {'1': 1}
-    print(type(l1))
-    print(type(l2))
-    print(type(l3))
+    x0 = {'a': 0, 'b': 1}
+    for k, v in x0.items():
+        print(k, v)
