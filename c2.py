@@ -6,13 +6,16 @@
     @createTime : 2023/6/21 13:50 
     @Email : sc19lr@leeds.ac.uk
     @github : https://github.com/frankRenlf
-    @Description : 
+    @Description : practice
+    @Description : practice
 """
 import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-    print(True is 1)
+    arr = np.array([1, 2, 3])
+    print(type(arr))
+    print(True == 1)
     x0 = {'a': 0, 'b': 1}
     for k, v in x0.items():
         print(k, v)
