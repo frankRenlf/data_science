@@ -34,4 +34,3 @@ if __name__ == "__main__":
     # cg(1, arr0=arr0, dict0=dict0)
     dog0 = Dog()
     print(dog0)
-   
