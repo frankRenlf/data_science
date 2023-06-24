@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def cg(x, *arr):
-    arr[1]['b'] = 5
+def cg(x, **arr):
+    arr['dict0']['b'] = 5
     print(x)
     print('------')
     print(arr)
@@ -23,4 +23,4 @@ def cg(x, *arr):
 if __name__ == "__main__":
     arr0 = [1, 2, 3]
     dict0 = {'a': 1, 'b': "str"}
-    cg(1, arr0, dict0)
+    cg(1, arr0=arr0, dict0=dict0)
