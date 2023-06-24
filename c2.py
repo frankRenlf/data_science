@@ -12,12 +12,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+def cg(x, *arr):
+    arr[1]['b'] = 5
+    print(x)
+    print('------')
+    print(arr)
+
+
 if __name__ == "__main__":
-    arr = np.array([1, 2, 3])
-    print(type(arr))
-    print(True == 1)
-    x0 = {'a': 0, 'b': 1}
-    for k, v in x0.items():
-        print(k, v)
-    x1 = [(k, v) for k, v in x0.items()]
-    print(type(x1[0]))
+    arr0 = [1, 2, 3]
+    dict0 = {'a': 1, 'b': "str"}
+    cg(1, arr0, dict0)
