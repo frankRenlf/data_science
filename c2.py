@@ -20,7 +20,18 @@ def cg(x, **arr):
     print(arr)
 
 
+class Dog:
+    def __init__(self):
+        self.age = 1
+
+    def __str__(self):
+        return str(self.age)
+
+
 if __name__ == "__main__":
-    arr0 = [1, 2, 3]
-    dict0 = {'a': 1, 'b': "str"}
-    cg(1, arr0=arr0, dict0=dict0)
+    # arr0 = [1, 2, 3]
+    # dict0 = {'a': 1, 'b': "str"}
+    # cg(1, arr0=arr0, dict0=dict0)
+    dog0 = Dog()
+    print(dog0)
+   
