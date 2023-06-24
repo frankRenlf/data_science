@@ -15,9 +15,6 @@ import numpy as np
 
 def cg(x, **arr):
     arr['dict0']['b'] = 5
-    print(x)
-    print('------')
-    print(arr)
 
 
 class Dog:
@@ -29,8 +26,15 @@ class Dog:
 
 
 if __name__ == "__main__":
-    # arr0 = [1, 2, 3]
-    # dict0 = {'a': 1, 'b': "str"}
-    # cg(1, arr0=arr0, dict0=dict0)
-    dog0 = Dog()
-    print(dog0)
+    print('3456' in '12345')
+    # with open('/Users/frank/Desktop/data_science/dataset/pi.txt') as file_object:
+    #     # contents = file_object.read()
+    #     # for line in file_object:
+    #     #     print(line.strip())
+    #     lines = file_object.readlines()
+    #     print(lines)
+    #     for line in lines:
+    #         print(line.rstrip())
+
+
+
