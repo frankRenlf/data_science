@@ -29,17 +29,22 @@ class Dog:
         return str(self.age)
 
 
-def json_add(arr: list):
+def json_add(arr):
     with open('dataset/json_data.txt', 'w') as jd:
         json.dump(arr, jd)
-        jd.write('\n')
 
 
-def json_load():
+def json_load(dataset: str):
     with open('dataset/json_data.txt', 'r+') as jd:
         s = json.load(jd)
-    print(type(s))
+    try:
+        data = s[dataset]
+        print(data)
+    except KeyError:
+        print('No such dataset')
+        s[dataset] = input('please enter data')
+        json_add(s)
 
 
 if __name__ == "__main__":
-    json_load()
+    json_load('dataset3')
