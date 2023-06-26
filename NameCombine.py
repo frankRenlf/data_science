@@ -10,5 +10,5 @@
 """
 
 
-def name_combine(first, middle, last):
+def name_combine(first, last, middle='a'):
     return first + ((' ' + middle + ' ') if middle else ' ') + last

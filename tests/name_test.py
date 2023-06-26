@@ -21,8 +21,12 @@ from NameCombine import name_combine
 class NameTest(unittest.TestCase):
     def test_name(self):
         formatted_name = name_combine('janis', 'joplin', 'a')
-        self.assertEqual(formatted_name, 'janis joplin a')
+        self.assertEqual(formatted_name, 'janis a joplin')
+
+    def test_err(self):
+        formatted_name = name_combine('janis', 'joplin')
+        self.assertEqual(formatted_name, 'janis a joplin')
 
 
-# if __name__ == "__main__":
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
