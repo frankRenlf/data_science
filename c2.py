@@ -9,8 +9,12 @@
     @Description : practice
     @Description : practice
 """
+import collections
+
 import matplotlib.pyplot as plt
 import numpy as np
+from collections import Counter
+import json
 
 
 def cg(x, **arr):
@@ -25,16 +29,17 @@ class Dog:
         return str(self.age)
 
 
+def json_add(arr: list):
+    with open('dataset/json_data.txt', 'w') as jd:
+        json.dump(arr, jd)
+        jd.write('\n')
+
+
+def json_load():
+    with open('dataset/json_data.txt', 'r+') as jd:
+        s = json.load(jd)
+    print(type(s))
+
+
 if __name__ == "__main__":
-    print('3456' in '12345')
-    # with open('/Users/frank/Desktop/data_science/dataset/pi.txt') as file_object:
-    #     # contents = file_object.read()
-    #     # for line in file_object:
-    #     #     print(line.strip())
-    #     lines = file_object.readlines()
-    #     print(lines)
-    #     for line in lines:
-    #         print(line.rstrip())
-
-
-
+    json_load()
