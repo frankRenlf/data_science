@@ -9,7 +9,6 @@
     @Description : 
 """
 
-
 class AnonymousSurvey:
     """收集匿名调查问卷的答案"""
 
