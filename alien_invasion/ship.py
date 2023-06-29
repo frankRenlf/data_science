@@ -10,6 +10,7 @@
 """
 
 import pygame
+from bullet import Bullet
 
 
 class Ship:
@@ -34,11 +35,13 @@ class Ship:
         self.moving_forward = False
         self.moving_backward = False
 
+        self.is_shoot = False
+
     def blitme(self):
         """在指定位置绘制飞船"""
         self.screen.blit(self.image, self.rect)
 
-    def update(self):
+    def update(self, bullets=None):
         """根据移动标志调整飞船的位置"""
         # right
         if self.moving_right and self.rect.right < self.screen_rect.right:
@@ -55,3 +58,7 @@ class Ship:
 
         self.rect.centerx = self.center_x
         self.rect.bottom = self.center_y
+
+        # if self.is_shoot:
+        #     new_bullet = Bullet(self.ai_settings, self.screen, self)
+        #     bullets.add(new_bullet)
