@@ -6,8 +6,9 @@
     @createTime : 2023/6/26 20:53 
     @Email : sc19lr@leeds.ac.uk
     @github : https://github.com/frankRenlf
-    @Description : 
+    @Description : book learning
 """
+
 
 class AnonymousSurvey:
     """收集匿名调查问卷的答案"""
@@ -29,4 +30,5 @@ class AnonymousSurvey:
         """显示收集到的所有答卷"""
 
         print("Survey results:")
-        for response in self.responses: print('- ' + response)
+        for response in self.responses:
+            print('- ' + response)
