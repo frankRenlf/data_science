@@ -21,7 +21,12 @@ def cg(x, **arr):
     arr['dict0']['b'] = 5
 
 
-class Dog:
+class Animal:
+    def __init__(self):
+        name
+
+
+class Dog(Animal):
     def __init__(self):
         self.age = 1
 
