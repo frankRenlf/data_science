@@ -22,13 +22,17 @@ def cg(x, **arr):
 
 
 class Animal:
-    def __init__(self):
-        name
+    def __init__(self, name):
+        self.name = name
+
+    def print(self):
+        print(self.name)
 
 
 class Dog(Animal):
-    def __init__(self):
-        self.age = 1
+    def __init__(self, name, age):
+        super().__init__(name)
+        self.age = age
 
     def __str__(self):
         return str(self.age)
@@ -52,4 +56,5 @@ def json_load(dataset: str):
 
 
 if __name__ == "__main__":
-    json_load('dataset3')
+    dog1 = Dog('111', 11)
+    dog1.print()
