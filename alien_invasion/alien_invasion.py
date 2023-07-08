@@ -10,6 +10,8 @@
 """
 
 import pygame
+
+from alien import Alien
 from settings import Settings
 from ship import Ship
 import game_functions as gf
@@ -29,13 +31,16 @@ def run_game():
 
     ship = Ship(ai_settings, screen)
 
+    aliens = Group()  # 创建外星人群
+    gf.create_fleet(ai_settings, screen, ship, aliens)
+
     while True:
         gf.check_events(ai_settings, screen, ship, bullets)
 
         ship.update(bullets)
         gf.update_bullets(bullets)
 
-        gf.update_screen(ai_settings, screen, ship, bullets)
+        gf.update_screen(ai_settings, screen, ship, aliens, bullets)
 
 
 if __name__ == "__main__":
