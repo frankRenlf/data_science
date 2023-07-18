@@ -7,13 +7,8 @@
     @Email : sc19lr@leeds.ac.uk
     @github : https://github.com/frankRenlf
     @Description : practice
-    @Description : practice
+    @Description : just test
 """
-import collections
-
-import matplotlib.pyplot as plt
-import numpy as np
-from collections import Counter
 import json
 
 
